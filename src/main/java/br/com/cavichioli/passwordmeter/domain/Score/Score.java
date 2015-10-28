@@ -11,7 +11,7 @@ public class Score implements Serializable{
 
     public static final Score ZERO = Score.of(0);
 
-    private Integer value;
+    private final Integer value;
 
     private Score(Integer value) {
         this.value = value;

@@ -8,11 +8,11 @@ import java.util.Optional;
 
 public class Password implements Serializable {
 
-    private String value;
+    private final String value;
 
     private Password(String value) {
-        this.value = Optional.ofNullable(value).orElse("");
-        this.value = this.value.replaceAll("\\s", "");
+        value = Optional.ofNullable(value).orElse("");
+        this.value = value.replaceAll("\\s", "");
     }
 
     public static Password of(String value) {
