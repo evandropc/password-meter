@@ -8,6 +8,7 @@ Front-end: AngularJs, HTML e CSS.
 ## API Rest
 
 Endpoint: /rest/password-check/{password}
+##
 Result: {
           "password": "123"
           "score": "4"
