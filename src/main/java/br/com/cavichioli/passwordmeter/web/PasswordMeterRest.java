@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class PasswordMeterRest {
 
-	@RequestMapping(value = "/rest/password-check/{password}" , method = RequestMethod.GET)
-	public @ResponseBody ResponseEntity<PasswordMeter> categoriaEmpresaPorId(@PathVariable String password) {
-		return new ResponseEntity(PasswordMeter.of(Password.of(password)), HttpStatus.OK);
+	@ResponseBody
+	@RequestMapping(value = "/rest/password-check/{password}", method = RequestMethod.GET)
+	public ResponseEntity<PasswordMeter> categoriaEmpresaPorId(@PathVariable Password password) {
+		return new ResponseEntity(PasswordMeter.of(password), HttpStatus.OK);
 	}
 
 }

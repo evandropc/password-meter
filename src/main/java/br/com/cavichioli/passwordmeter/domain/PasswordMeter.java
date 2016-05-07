@@ -17,13 +17,10 @@ import java.io.Serializable;
 
 public class PasswordMeter implements Serializable {
 
-    @JsonSerialize(using = PasswordSerializer.class)
     private final Password password;
 
-    @JsonSerialize(using = ScoreSerializer.class)
     private final Score score;
 
-    @JsonSerialize(using = ComplexitySerializer.class)
     private final Complexity complexity;
 
     private PasswordMeter(Password password) {
