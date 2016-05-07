@@ -5,8 +5,8 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Avaliador de Segurança de Senha">
-    <meta name="keywords" content="Avaliador de Segurança, Password Meter, Senha">
+    <meta name="description" content="Avaliador de SeguranÃ§a de Senha">
+    <meta name="keywords" content="Avaliador de SeguranÃ§a, Password Meter, Senha">
     <meta name="author" content="Evandro Panaro Cavichioli">
 
     <title>{{'HEADER_TITLE' | translate}}</title>
