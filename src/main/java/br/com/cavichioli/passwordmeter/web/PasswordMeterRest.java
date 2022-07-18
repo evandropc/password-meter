@@ -11,7 +11,7 @@ public class PasswordMeterRest {
 
 	@ResponseBody
 	@RequestMapping(value = "/rest/password-check/{password}", method = RequestMethod.GET)
-	public ResponseEntity<PasswordMeter> categoriaEmpresaPorId(@PathVariable Password password) {
+	public ResponseEntity<PasswordMeter> check(@PathVariable Password password) {
 		return new ResponseEntity(PasswordMeter.of(password), HttpStatus.OK);
 	}
 
